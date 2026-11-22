@@ -1,0 +1,36 @@
+{
+  "rewrites": [
+    {
+      "source": "/slides",
+      "destination": "/static/slides.html"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index.py?path=:path*"
+    },
+    {
+      "source": "/step1/:path*",
+      "destination": "/api/index.py?path=step1/:path*"
+    },
+    {
+      "source": "/step2/:path*",
+      "destination": "/api/index.py?path=step2/:path*"
+    },
+    {
+      "source": "/step3/:path*",
+      "destination": "/api/index.py?path=step3/:path*"
+    },
+    {
+      "source": "/chat",
+      "destination": "/api/index.py?path=chat"
+    },
+    {
+      "source": "/import-gsheet",
+      "destination": "/api/index.py?path=import-gsheet"
+    },
+    {
+      "source": "/upload-file",
+      "destination": "/api/index.py?path=upload-file"
+    }
+  ]
+}
